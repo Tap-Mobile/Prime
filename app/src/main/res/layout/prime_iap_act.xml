@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primeAppBackground">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/prime_iap_features_bg"
+        android:transitionName="header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--        <FrameLayout-->
+    <!--            android:id="@+id/btn_close"-->
+    <!--            android:layout_width="@dimen/primeIapBtnCloseSize"-->
+    <!--            android:layout_height="@dimen/primeIapBtnCloseSize"-->
+    <!--            android:layout_marginStart="12dp"-->
+    <!--            android:layout_marginTop="@dimen/primeIapBtnCloseTop"-->
+    <!--            android:padding="8dp"-->
+    <!--            android:visibility="invisible"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:visibility="visible">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@drawable/prime_iap_bg_close_x"-->
+    <!--                android:padding="4dp"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:srcCompat="@drawable/prime_ic_close"-->
+    <!--                app:tint="@color/white" />-->
+    <!--        </FrameLayout>-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <TextView
+        android:id="@+id/title_iap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/prime_iapStartFreeTrial"
+        android:textColor="@color/primeTextTitleMain"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/top_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/premium_features_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_continue_limited"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_area">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/premium_features_root"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.95"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <ImageView
+                android:id="@+id/image_start_top"
+                style="@style/IapFeaturesIcon"
+                app:layout_constraintBottom_toTopOf="@id/image_start_middle"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/text_start_top"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintVertical_chainStyle="spread"
+                app:srcCompat="@drawable/prime_iap_ic_feature_connection" />
+
+            <TextView
+                android:id="@+id/text_start_top"
+                style="@style/IapFeaturesText"
+                android:text="@string/prime_iapFeatureConnection"
+                app:layout_constraintBottom_toBottomOf="@id/image_start_top"
+                app:layout_constraintLeft_toRightOf="@id/image_start_top"
+                app:layout_constraintRight_toRightOf="@id/center"
+                app:layout_constraintTop_toTopOf="@id/image_start_top" />
+
+            <ImageView
+                android:id="@+id/image_end_top"
+                style="@style/IapFeaturesIcon"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="@id/center"
+                app:layout_constraintRight_toLeftOf="@id/text_end_top"
+                app:layout_constraintTop_toTopOf="@id/image_start_top"
+                app:srcCompat="@drawable/prime_iap_ic_feature_locations" />
+
+            <TextView
+                android:id="@+id/text_end_top"
+                style="@style/IapFeaturesText"
+                android:text="@string/prime_iapFeatureLocations"
+                app:layout_constraintBottom_toBottomOf="@id/image_end_top"
+                app:layout_constraintLeft_toRightOf="@id/image_end_top"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/image_end_top" />
+
+            <ImageView
+                android:id="@+id/image_start_middle"
+                style="@style/IapFeaturesIcon"
+                android:layout_marginTop="@dimen/primeIapFeaturesMarginTop"
+                app:layout_constraintBottom_toTopOf="@id/image_start_bottom"
+                app:layout_constraintLeft_toLeftOf="@id/image_start_top"
+                app:layout_constraintRight_toRightOf="@id/image_start_top"
+                app:layout_constraintTop_toBottomOf="@id/image_start_top"
+                app:srcCompat="@drawable/prime_iap_ic_feature_bandwidth" />
+
+            <TextView
+                android:id="@+id/text_start_middle"
+                style="@style/IapFeaturesText"
+                android:text="@string/prime_iapFeatureBandwidth"
+                app:layout_constraintBottom_toBottomOf="@id/image_start_middle"
+                app:layout_constraintLeft_toRightOf="@id/image_start_middle"
+                app:layout_constraintTop_toTopOf="@id/image_start_middle" />
+
+            <ImageView
+                android:id="@+id/image_end_middle"
+                style="@style/IapFeaturesIcon"
+                app:layout_constraintLeft_toLeftOf="@id/image_end_top"
+                app:layout_constraintRight_toRightOf="@id/image_end_top"
+                app:layout_constraintTop_toTopOf="@id/image_start_middle"
+                app:srcCompat="@drawable/prime_iap_ic_feature_no_ads" />
+
+            <TextView
+                android:id="@+id/text_end_middle"
+                style="@style/IapFeaturesText"
+                android:text="@string/prime_iapFeatureNoAds"
+                app:layout_constraintBottom_toBottomOf="@id/image_end_middle"
+                app:layout_constraintLeft_toRightOf="@id/image_end_middle"
+                app:layout_constraintTop_toTopOf="@id/image_end_middle" />
+
+            <ImageView
+                android:id="@+id/image_start_bottom"
+                style="@style/IapFeaturesIcon"
+                android:layout_marginTop="@dimen/primeIapFeaturesMarginTop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/image_start_top"
+                app:layout_constraintRight_toRightOf="@id/image_start_top"
+                app:layout_constraintTop_toBottomOf="@id/image_start_middle"
+                app:srcCompat="@drawable/prime_iap_ic_feature_secure" />
+
+            <TextView
+                android:id="@+id/text_start_bottom"
+                style="@style/IapFeaturesText"
+                android:text="@string/prime_iapFeatureSecure"
+                app:layout_constraintBottom_toBottomOf="@id/image_start_bottom"
+                app:layout_constraintLeft_toRightOf="@id/image_start_bottom"
+                app:layout_constraintTop_toTopOf="@id/image_start_bottom" />
+
+            <ImageView
+                android:id="@+id/image_end_bottom"
+                style="@style/IapFeaturesIcon"
+                app:layout_constraintLeft_toLeftOf="@id/image_end_top"
+                app:layout_constraintRight_toRightOf="@id/image_end_top"
+                app:layout_constraintTop_toTopOf="@id/image_start_bottom"
+                app:srcCompat="@drawable/prime_iap_ic_feature_secure" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/IapFeaturesText"
+                android:text="@string/prime_iapFeatureStreaming"
+                app:layout_constraintBottom_toBottomOf="@id/image_end_bottom"
+                app:layout_constraintLeft_toRightOf="@id/image_end_bottom"
+                app:layout_constraintTop_toTopOf="@id/image_end_bottom" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btn_continue_limited"
+        style="@style/IapInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4dp"
+        android:text="@string/prime_iapContinueLimited"
+        android:textColor="@color/primeTextTitle"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/bot_area"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bot_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="@dimen/prime_iapBottomPart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <include
+            android:id="@+id/btn_continue"
+            style="@style/IapContinueButton"
+            layout="@layout/prime_view_bottom_continue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/trial_info_premium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/trial_info_premium"
+            style="@style/IapInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primeTextTitleMain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_continue"
+            tools:text="@string/prime_iapFreeTrialAndPrice"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

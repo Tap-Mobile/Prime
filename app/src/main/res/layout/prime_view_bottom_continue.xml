@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/btn_start_welcome"
+        style="@style/IapContinueText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:transitionName="continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_arrow"
+        android:layout_width="21dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="22dp"
+        android:src="@drawable/prime_iap_ic_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/btn_start_welcome"
+        app:layout_constraintRight_toRightOf="@id/btn_start_welcome"
+        app:layout_constraintTop_toTopOf="@id/btn_start_welcome" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

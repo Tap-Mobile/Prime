@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name" translatable="false">Prime VPN</string>
+    <string name="file_provider_authority" translatable="false">com.vpn.prime.files</string>
+
+    <!---//////////////////////////      Common strings     ///////////////////////////-->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+
+    <string name="title_activity_home">@string/app_name</string>
+
+    <string name="clickBackAgainLogout">Click back again to minimize</string>
+
+    <string name="profileFastest">Fastest</string>
+    <string name="profileRandom">Random</string>
+    <string name="serverLabelUnderMaintenance">%1$s Under maintenance</string>
+    <string name="serverLabelUpgrade">%1$s (Upgrade)</string>
+
+    <string name="insufficientPermissionsTitle">User action required</string>
+    <string name="insufficientPermissionsDetails">Couldn\'t establish VPN connection automatically. Please connect manually one time to grant permissions.</string>
+    <string name="restrictedMaintenanceTitle">Under maintenance</string>
+    <string name="restrictedMaintenanceDescription">Server you are currently trying to connect is under maintenance. Please try another server.</string>
+    <string name="onMaintenanceDetected">The VPN server you were connected to is undergoing maintenance. We automatically reconnected you to the fastest available server.</string>
+
+    <string name="error_prepare_vpn_description">Please disable Always-on VPN for all other VPN apps in the Android VPN system settings, as that prevents Prime VPN from establishing a VPN connection. Please also grant VPN permissions if a dialog requesting VPN permissions appears. Other VPN apps may also need to be uninstalled to prevent conflicts. Afterwards, please try again.</string>
+    <string name="error_prepare_vpn_settings">Go to Android VPN settings</string>
+    <string name="error_prepare_vpn_title">Error: VPN permission problem</string>
+    <string name="error_server_not_set">Server no longer available</string>
+
+    <string name="loaderErrorNoInternet">No internet connection</string>
+    <string name="loaderErrorGeneric">Something went wrong</string>
+    <string name="loaderErrorTimeout">Connection timed out. Please try again.</string>
+
+    <string name="disconnect">Disconnect</string>
+    <string name="state_connecting">Connecting&#8230;</string>
+    <string name="state_connected">Connected</string>
+    <string name="state_disconnecting">Disconnecting&#8230;</string>
+    <string name="state_error">Error</string>
+
+    <string name="tileConnected">Connected: %1$s</string>
+    <string name="quickConnect">Quick connect</string>
+
+    <string name="openUrlError">%1$s could not be opened. Web browser was not detected on your device.</string>
+
+    <string name="loaderConnectingTo">Connecting to %1$s</string>
+    <string name="loaderNotConnected">Not connected (Unprotected)</string>
+    <string name="loaderConnectedTo">Connected to %1$s</string>
+    <string name="loaderReconnecting">Reconnecting</string>
+    <string name="loaderReconnectNoNetwork">Waiting for usable network</string>
+    <string name="loaderCheckingAvailability">Checking server availability</string>
+    <string name="loaderCancel">Cancel connection</string>
+
+
+    <!---//////////////////////////      Prime strings     ///////////////////////////-->
+
+    <string name="prime_onboardingTitleAds">Remove Ads</string>
+    <string name="prime_onboardingDescriptionAds">Be Free, Truly Anonymous &amp; Secured.\nUnblock Any Site.\nWith a fast VPN Connection!</string>
+    <string name="prime_onboardingTitleConnection">Faster Connection</string>
+    <string name="prime_onboardingDescriptionConnection">Be Free, Truly Anonymous &amp; Secured.\nUnblock Any Site.\nWith a fast VPN Connection!</string>
+    <string name="prime_onboardingTitleBandwidth">Unlimited Bandwidth</string>
+    <string name="prime_onboardingDescriptionBandwidth">Be Free, Truly Anonymous &amp; Secured.\nUnblock Any Site.\nWith a fast VPN Connection!</string>
+    <string name="prime_onboardingTitleLocations">Premium Locations</string>
+    <string name="prime_onboardingDescriptionLocations">Be Free, Truly Anonymous &amp; Secured.\nUnblock Any Site.\nWith a fast VPN Connection!</string>
+
+    <string name="prime_iapContinueLimited">Continue with limited version</string>
+    <string name="prime_iapNoTrial">Get Pro for - %s/%s, cancel anytime</string>
+    <string name="prime_iapFreeTrial">Start your %s-day free trial</string>
+    <string name="prime_iapFreeTrialAndPrice">%s day free trial then %s/%s, cancel anytime</string>
+    <string name="prime_iapPriceAfterFreeTrial">Then %s per %s</string>
+    <string name="prime_iapLoading">Loading Google Play…</string>
+    <string name="prime_iapYear">year</string>
+    <string name="prime_iapMonth">month</string>
+    <string name="prime_mainGoPremium">Go Premium</string>
+    <string name="prime_mainOptimalLocation">Optimal location</string>
+    <string name="prime_mainBtnConnect">Tap to Connect</string>
+    <string name="prime_mainTipConnect">Tap to Connect</string>
+    <string name="prime_mainBtnConnecting">Connecting…</string>
+    <string name="prime_mainBtnDisconnect">Tap to Disconnect</string>
+    <string name="prime_mainBtnDisconnecting">Disconnecting…</string>
+    <string name="prime_mainBtnWaitingNetwork">Waiting for Network…</string>
+    <string name="prime_mainBtnLoadingServers">Loading Servers…</string>
+    <string name="prime_serversTitle">Server Locations</string>
+    <string name="prime_iapGoogleServiceNotAvailable">Please make sure you have Google Play installed and have logged in</string>
+    <string name="prime_iapInAppBillingError">An error has occurred. Please try again.</string>
+
+    <string name="prime_menuGoPremium">Go Premium</string>
+    <string name="prime_menuContactSupport">Contact Support</string>
+    <string name="prime_menuShare">Share</string>
+    <string name="prime_menuRateUs">Rate Us</string>
+
+    <string name="prime_supportInfoTitle">What do you need\nhelp with?</string>
+    <string name="prime_supportReasonConnectionProblems">Connection Problems</string>
+    <string name="prime_supportReasonSlowInternet">Slow Internet</string>
+    <string name="prime_supportReasonOther">Something Else</string>
+    <string name="prime_supportMessageTitle">Tell us more</string>
+    <string name="prime_supportMessageHint">Tell us more about your %s</string>
+    <string name="prime_supportMessageReasonConnection">connection problems</string>
+    <string name="prime_supportMessageReasonSlowInternet">slow Internet problems</string>
+    <string name="prime_supportMessageReasonOther">problems</string>
+    <string name="prime_supportMessageCloseDialogTitle">Are you sure?</string>
+    <string name="prime_supportMessageCloseDialogMessage">Your message won\'t be saved</string>
+    <string name="prime_iapStartFreeTrial">Start Free Trial</string>
+    <string name="prime_iapCtaContinue">Continue</string>
+
+    <string name="prime_iapFeatureConnection">Faster\nConnection</string>
+    <string name="prime_iapFeatureLocations">Premium\nLocations</string>
+    <string name="prime_iapFeatureBandwidth">Unlimited\nBandwidth</string>
+    <string name="prime_iapFeatureNoAds">Remove\nAds</string>
+    <string name="prime_iapFeatureSecure">Secure\nBrowsing</string>
+    <string name="prime_iapFeatureStreaming">Faster\nStreaming</string>
+
+    <string name="prime_shareText">Check out this VPN app!</string>
+    <string name="prime_shareTitle">Share app</string>
+
+    <plurals name="prime_serversCountryCities">
+        <item quantity="one">%s city</item>
+        <item quantity="other">%s cities</item>
+    </plurals>
+</resources>

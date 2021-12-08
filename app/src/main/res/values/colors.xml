@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primeColorPrimary">#6A5DDC</color>
+    <color name="primeColorAccentLight">#D5E5F3</color>
+    <color name="primeColorMainBtnConnect">@color/primeColorPrimary</color>
+    <color name="primeColorMainBtnDisconnect">#2D4256</color>
+    <color name="primeColorTextOnPrimary">#fff</color>
+    <color name="primeAppBackground">#fff</color>
+    <color name="primeTextTitle">#000</color>
+    <color name="primeTextSecondary">#4B616B</color>
+
+    <color name="primeTextTitleMain">#2D4256</color>
+
+    <color name="colorAccentLight">#D5E5F3</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="red">#e52424</color>
+    <color name="orange">#FF9909</color>
+</resources>

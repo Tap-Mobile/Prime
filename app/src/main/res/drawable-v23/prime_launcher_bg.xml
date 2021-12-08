@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/primeColorPrimary" />
+        </shape>
+    </item>
+    <!-- launcher icon -->
+    <item
+        android:width="107dp"
+        android:height="107dp"
+        android:gravity="center"
+        android:drawable="@drawable/prime_ic_launch"
+        />
+</layer-list>

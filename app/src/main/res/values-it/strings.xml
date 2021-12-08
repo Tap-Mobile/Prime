@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_activity_home">@string/app_name</string>
+  <string name="yes">Sì</string>
+  <string name="no">No</string>
+  <string name="ok">OK</string>
+  <string name="loaderConnectingTo">Collegamento a %1$s</string>
+  <string name="loaderNotConnected">Non connesso (non protetto)</string>
+  <string name="loaderConnectedTo">Connesso a %1$s</string>
+  <string name="loaderReconnecting">Riconnessione in corso</string>
+  <string name="loaderReconnectNoNetwork">In attesa di rete utilizzabile</string>
+  <string name="loaderCheckingAvailability">Controllo disponibilità server</string>
+  <string name="loaderCancel">Annulla connessione</string>
+  <string name="clickBackAgainLogout">Clicca di nuovo indietro per minimizzare</string>
+  <string name="quickConnect">Connessione rapida</string>
+  <string name="cancel">Annulla</string>
+  <string name="close">Chiudi</string>
+  <string name="restrictedMaintenanceTitle">In manutenzione</string>
+  <string name="restrictedMaintenanceDescription">Il server al quale stai cercando di connetterti è in manutenzione. Per favore prova un altro server.</string>
+  <string name="insufficientPermissionsTitle">Azione dell\'utente necessaria</string>
+  <string name="insufficientPermissionsDetails">Impossibile stabilire in automatico la connessione VPN. Connettiti manualmente una volta per concedere le autorizzazioni.</string>
+  <string name="disconnect">Disconnetti</string>
+  <string name="state_connecting">Connessione…</string>
+  <string name="state_connected">Connesso</string>
+  <string name="state_disconnecting">Disconnessione…</string>
+  <string name="state_error">Errore</string>
+  <string name="error_prepare_vpn_description">Per favore disabilita l\'opzione VPN Sempre Attiva per tutte le altre applicazioni VPN nelle impostazioni VPN di sistema di Android, in quanto ciò impedisce a Prime VPN di stabilire una connessione VPN. Per favore concedi anche le autorizzazioni se appare una finestra di dialogo che richiede le autorizzazioni VPN. Altre applicazioni VPN potrebbero anche aver bisogno di essere disinstallate per prevenire i conflitti. Dopo, per favore, prova di nuovo.</string>
+  <string name="error_prepare_vpn_settings">Vai alle impostazioni VPN di Android</string>
+  <string name="error_prepare_vpn_title">Errore: problema di autorizzazione VPN</string>
+  <string name="error_server_not_set">Server non più disponibile</string>
+  <string name="profileFastest">Più veloce</string>
+  <string name="profileRandom">Casuale</string>
+  <string name="serverLabelUnderMaintenance">%1$s In manutenzione</string>
+  <string name="serverLabelUpgrade">%1$s (Effettua l\'upgrade)</string>
+  <string name="loaderErrorNoInternet">Nessuna connessione Internet</string>
+  <string name="loaderErrorGeneric">Qualcosa è andato storto</string>
+  <string name="tileConnected">Connesso: %1$s</string>
+  <string name="openUrlError">Impossibile aprire %1$s. Il browser non è stato rilevato sul tuo dispositivo.</string>
+  <string name="loaderErrorTimeout">Connessione scaduta. Riprova.</string>
+  <string name="onMaintenanceDetected">Il server VPN a cui sei stato connesso è in manutenzione. Ti abbiamo ricollegato automaticamente al server più veloce disponibile.</string>
+</resources>

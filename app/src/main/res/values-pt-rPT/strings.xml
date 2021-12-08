@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_activity_home">@string/app_name</string>
+  <string name="yes">Sim</string>
+  <string name="no">Não</string>
+  <string name="ok">ACEITAR</string>
+  <string name="loaderConnectingTo">A ligar a %1$s</string>
+  <string name="loaderNotConnected">Não ligado (desprotegido)</string>
+  <string name="loaderConnectedTo">Ligado a %1$s</string>
+  <string name="loaderReconnecting">A religar</string>
+  <string name="loaderReconnectNoNetwork">A aguardar por rede utilizável</string>
+  <string name="loaderCheckingAvailability">A confirmar disponibilidade do servidor</string>
+  <string name="loaderCancel">Cancelar ligação</string>
+  <string name="clickBackAgainLogout">Clique novamente para minimizar</string>
+  <string name="quickConnect">Ligação rápida</string>
+  <string name="cancel">Cancelar</string>
+  <string name="close">Fechar</string>
+  <string name="restrictedMaintenanceTitle">Em manutenção</string>
+  <string name="restrictedMaintenanceDescription">O servidor a que se está a tentar ligar está em manutenção. Por favor, tente outro servidor.</string>
+  <string name="insufficientPermissionsTitle">Acção do utilizador requerida</string>
+  <string name="insufficientPermissionsDetails">Impossível estabelecer uma ligação VPN automaticamente. Por favor, ligue-se manualmente esta vez para conceder permissões.</string>
+  <string name="onMaintenanceDetected">O servidor VPN ao qual tinha ligação está em manutenção. Reestabeleceremos ligação automaticamente ao servidor mais rápido disponível.</string>
+  <string name="disconnect">Desligar</string>
+  <string name="state_connecting">A ligar…</string>
+  <string name="state_connected">Ligado</string>
+  <string name="state_disconnecting">A desligar…</string>
+  <string name="state_error">Erro</string>
+  <string name="error_prepare_vpn_description">Por favor, desactive a opção Sempre ligada para todas as outras aplicações VPN nas definições do sistema Android, elas impedem o Prime VPN de estabelecer uma ligação VPN. Conceda também permissões, se um diálogo aparecer. As outras aplicações VPN podem também precisar de ser desinstaladas para evitar conflitos. Tente novamente a seguir.</string>
+  <string name="error_prepare_vpn_settings">Ir para as configurações de VPN do Android</string>
+  <string name="error_prepare_vpn_title">Erro: problema de permissões VPN</string>
+  <string name="error_server_not_set">O servidor já não está disponível</string>
+  <string name="profileFastest">A mais rápida</string>
+  <string name="profileRandom">Aleatória</string>
+  <string name="serverLabelUnderMaintenance">%1$s em manutenção</string>
+  <string name="serverLabelUpgrade">%1$s (actualizar)</string>
+  <string name="loaderErrorNoInternet">Sem ligação à Internet</string>
+  <string name="loaderErrorGeneric">Algo correu mal</string>
+  <string name="tileConnected">Ligado: %1$s</string>
+  <string name="openUrlError">%1$s não pôde ser aberto. Nenhum navegador web detectado no dispositivo.</string>
+  <string name="loaderErrorTimeout">Ligação expirada. Por favor, tente novamente.</string>
+</resources>

@@ -1,0 +1,99 @@
+<resources>
+    <style name="RootTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--        <item name="android:navigationBarColor">@color/colorBackgroundFooter</item>-->
+        <!--        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>-->
+    </style>
+
+    <style name="PrimeAppTheme" parent="RootTheme">
+        <item name="colorPrimary">@color/primeColorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/primeColorPrimary</item>
+
+        <item name="android:textViewStyle">@style/BaseTextViewStyle</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="IapContinueButton">
+        <item name="layout_constraintWidth_percent">0.85</item>
+        <item name="android:gravity">center</item>
+        <item name="android:transitionName">continue</item>
+    </style>
+
+    <style name="IapContinueText">
+        <item name="android:textSize">21sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/prime_bg_bottom_continue</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:text">@string/prime_iapCtaContinue</item>
+    </style>
+
+    <style name="IapInfoText">
+        <item name="android:textColor">@color/primeTextTitle</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="BaseTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+
+    <style name="WelcomePrimeTheme" parent="PrimeAppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowEnterTransition">@android:transition/fade</item>
+        <item name="android:windowExitTransition">@android:transition/no_transition</item>
+    </style>
+
+
+    <style name="WelcomeSplashTheme" parent="WelcomePrimeTheme">
+        <item name="android:windowBackground">@drawable/prime_launcher_bg</item>
+    </style>
+
+    <style name="PrimeSettingsButton">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:background">@drawable/prime_menu_bg_btn_common</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#707070</item>
+        <item name="layout_constraintWidth_percent">0.55</item>
+    </style>
+
+    <style name="PrimeSettingsButtonColored" parent="PrimeSettingsButton">
+        <item name="android:background">@drawable/prime_menu_bg_btn_colored</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="IapFeaturesIcon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">W,36:30</item>
+        <item name="layout_constraintHeight_max">30dp</item>
+        <item name="layout_constraintHeight_percent">0.25</item>
+    </style>
+
+    <style name="IapFeaturesText">
+        <item name="android:textColor">@color/primeTextTitleMain</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="AppAlertDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/BaseTextViewStyle</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+</resources>

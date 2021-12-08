@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_activity_home">@string/app_name</string>
+  <string name="yes">Sí</string>
+  <string name="no">No</string>
+  <string name="ok">OK</string>
+  <string name="loaderConnectingTo">Conectando a %1$s</string>
+  <string name="loaderNotConnected">No conectado (sin protección)</string>
+  <string name="loaderConnectedTo">Conectado a %1$s</string>
+  <string name="loaderReconnecting">Reconectando</string>
+  <string name="loaderReconnectNoNetwork">Esperando una red utilizable</string>
+  <string name="loaderCheckingAvailability">Comprobando la disponibilidad del servidor</string>
+  <string name="loaderCancel">Cancelar conexión</string>
+  <string name="clickBackAgainLogout">Haga clic de nuevo para minimizar</string>
+  <string name="quickConnect">Conexión rápida</string>
+  <string name="cancel">Cancelar</string>
+  <string name="close">Cerrar</string>
+
+  <string name="restrictedMaintenanceTitle">En mantenimiento</string>
+  <string name="restrictedMaintenanceDescription">El servidor al que se está intentando conectar está en mantenimiento. Por favor, inténtelo con otro servidor.</string>
+
+  <string name="insufficientPermissionsTitle">Es necesaria la acción del usuario</string>
+  <string name="insufficientPermissionsDetails">No se pudo establecer la conexión VPN automáticamente. Conéctese manualmente una vez para otorgar permisos.</string>
+  <string name="onMaintenanceDetected">El servidor VPN al que estaba conectado está en mantenimiento. Lo reconectamos automáticamente al servidor más rápido disponible.</string>
+
+  <string name="disconnect">Desconectar</string>
+  <string name="state_connecting">Conectando…</string>
+  <string name="state_connected">Conectado</string>
+  <string name="state_disconnecting">Desconectando…</string>
+  <string name="state_error">Error</string>
+
+  <string name="error_prepare_vpn_description">Por favor, deshabilite la VPN siempre activa para todas las demás aplicaciones VPN en la configuración del sistema VPN de Android, ya que eso evita que Prime VPN pueda establecer una conexión VPN. Por favor, otorgue también permisos VPN si aparece un cuadro de diálogo que solicite los permisos VPN. Es posible que también sea necesario desinstalar otras aplicaciones VPN para evitar conflictos. Después, por favor intentelo de nuevo.</string>
+  <string name="error_prepare_vpn_settings">Ir a la configuración de VPN en Android</string>
+  <string name="error_prepare_vpn_title">Error: problema de permisos de VPN</string>
+  <string name="error_server_not_set">El servidor ya no está disponible</string>
+  <string name="profileFastest">El más rápido</string>
+  <string name="profileRandom">Aleatorio</string>
+  <string name="serverLabelUnderMaintenance">%1$s En mantenimiento</string>
+  <string name="serverLabelUpgrade">%1$s (Mejorar)</string>
+  <string name="loaderErrorNoInternet">No hay conexión a Internet</string>
+  <string name="loaderErrorGeneric">Algo salió mal</string>
+
+  <string name="tileConnected">Conectado: %1$s</string>
+  <string name="openUrlError">No se pudo abrir %1$s. El navegador web no se detectó en su dispositivo.</string>
+  <string name="loaderErrorTimeout">Se ha agotado el tiempo de conexión. Por favor, inténtalo de nuevo.</string>
+</resources>

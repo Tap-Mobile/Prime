@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primeAppBackground">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/prime_menu_bg_logo"
+            android:padding="9dp"
+            app:layout_constraintWidth_max="144dp"
+            android:src="@drawable/prime_menu_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2D4256"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="20sp"
+            android:text="@string/prime_supportInfoTitle"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+
+        <TextView
+            android:id="@+id/btn_reason_connection_problems"
+            style="@style/PrimeSettingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/prime_supportReasonConnectionProblems"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintBottom_toTopOf="@id/btn_reason_slow_internet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/btn_reason_slow_internet"
+            style="@style/PrimeSettingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/prime_supportReasonSlowInternet"
+            app:layout_constraintBottom_toTopOf="@id/btn_reason_other"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_reason_connection_problems"
+            app:layout_goneMarginTop="0dp" />
+
+        <TextView
+            android:id="@+id/btn_reason_other"
+            style="@style/PrimeSettingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/prime_supportReasonOther"
+            app:layout_constraintTop_toBottomOf="@id/btn_reason_slow_internet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

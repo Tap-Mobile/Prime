@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="prime_iap_screen_main_part">0.82</dimen> <!-- = 1 - iap_bottom_part-->
+    <dimen name="prime_iap_screen_bottom_part">0.18</dimen>
+    <dimen name="prime_main_top_icons_top_margin">18dp</dimen>
+
+
+    <dimen name="primeIapBtnCloseTop">12dp</dimen>
+    <dimen name="primeIapBtnCloseSize">40dp</dimen>
+    <dimen name="primeIapFeaturesMarginTop">20dp</dimen>
+
+    <dimen name="prime_iapOtherPart">0.82</dimen> <!-- = 1 - iapBottomPart-->
+    <dimen name="prime_iapBottomPart">0.18</dimen>
+    <dimen name="prime_mainTipBounceAnim">8dp</dimen>
+
+</resources>
