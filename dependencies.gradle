@@ -1,0 +1,230 @@
+ext.Versions = [
+        kotlin  : [
+                sdk       : "1.4.30",
+                coroutines: "1.3.9"
+        ],
+        jetpack : [
+                room      : "2.2.5",
+                navigation: "2.3.1",
+                lifecycle : "2.2.0",
+                camera    : [
+                        core: "1.0.0-rc1",
+                        ext : "1.0.0-alpha20"
+                ]
+        ],
+        google  : [
+                dagger: "2.28.3",
+        ],
+        yandex  : [
+                appmetrica: "3.18.0"
+        ],
+        okhttp  : "4.9.0",
+        glide   : "4.11.0",
+        mvi     : "1.2.4",
+        retrofit: "2.9.0",
+        huawei  : "2.1.0.301",
+]
+
+ext.Libs = [
+        kotlin  : [
+                classpath : "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin.sdk}",
+                stdLib    : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin.sdk}",
+                coroutines: [
+                        core     : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.kotlin.coroutines}",
+                        android  : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.kotlin.coroutines}",
+                        rxInterop: "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:${Versions.kotlin.coroutines}"
+                ]
+        ],
+
+        jetpack : [
+                core                 : "androidx.core:core-ktx:1.3.2",
+                appcompat            : "androidx.appcompat:appcompat:1.2.0",
+                fragment             : "androidx.fragment:fragment-ktx:1.2.5",
+                transition           : "androidx.transition:transition:1.3.1",
+                constraint           : "androidx.constraintlayout:constraintlayout:2.0.4",
+                card                 : "androidx.cardview:cardview:1.0.0",
+                recyclerview         : "androidx.recyclerview:recyclerview:1.1.0",
+                annotation           : "androidx.annotation:annotation:1.1.0",
+                localBroadcastManager: "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0",
+                work                 : "androidx.work:work-runtime-ktx:2.4.0",
+                exif                 : "androidx.exifinterface:exifinterface:1.3.1",
+                room                 : [
+                        runtime : "androidx.room:room-runtime:${Versions.jetpack.room}",
+                        compiler: "androidx.room:room-compiler:${Versions.jetpack.room}",
+                        ktx     : "androidx.room:room-ktx:${Versions.jetpack.room}",
+                ],
+                navigation           : [
+                        classpath: "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.jetpack.navigation}",
+                        fragment : "androidx.navigation:navigation-fragment-ktx:${Versions.jetpack.navigation}",
+                        ui       : "androidx.navigation:navigation-ui-ktx:${Versions.jetpack.navigation}",
+                ],
+                camerax              : [
+                        core      : "androidx.camera:camera-core:${Versions.jetpack.camera.core}",
+                        lifecycle : "androidx.camera:camera-lifecycle:${Versions.jetpack.camera.core}",
+                        camera2   : "androidx.camera:camera-camera2:${Versions.jetpack.camera.core}",
+                        cameraView: "androidx.camera:camera-view:${Versions.jetpack.camera.ext}",
+                        cameraExt : "androidx.camera:camera-extensions:${Versions.jetpack.camera.ext}"
+                ],
+                lifecycle            : [
+                        ext         : "androidx.lifecycle:lifecycle-extensions:${Versions.jetpack.lifecycle}",
+                        viewModelKtx: "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.jetpack.lifecycle}",
+                        liveDataKtx : "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.jetpack.lifecycle}",
+                        runtime     : "androidx.lifecycle:lifecycle-runtime:${Versions.jetpack.lifecycle}",
+                        commonJava8 : "androidx.lifecycle:lifecycle-common-java8:${Versions.jetpack.lifecycle}",
+                ],
+        ],
+
+        google  : [
+                material: "com.google.android.material:material:1.2.1",
+
+                firebase: [
+                        BoM        : "com.google.firebase:firebase-bom:25.13.0",
+                        analytics  : "com.google.firebase:firebase-analytics-ktx",
+                        crashlytics: "com.google.firebase:firebase-crashlytics-ktx"
+                ],
+
+                gms     : [
+                        identifier: "com.google.android.gms:play-services-ads-identifier:17.0.0",
+                ],
+
+                dagger  : [
+                        lib     : "com.google.dagger:dagger:${Versions.google.dagger}",
+                        compiler: "com.google.dagger:dagger-compiler:${Versions.google.dagger}"
+                ],
+        ],
+
+        glide   : [
+                core    : "com.github.bumptech.glide:glide:${Versions.glide}",
+                compiler: "com.github.bumptech.glide:compiler:${Versions.glide}"
+        ],
+
+        mvi     : [
+                core   : "com.github.badoo.mvicore:mvicore:${Versions.mvi}",
+                android: "com.github.badoo.mvicore:mvicore-android:${Versions.mvi}",
+                diff   : "com.github.badoo.mvicore:mvicore-diff:${Versions.mvi}",
+        ],
+
+        okhttp  : [
+                core: "com.squareup.okhttp3:okhttp:${Versions.okhttp}",
+                logs: "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}",
+        ],
+
+        retrofit: [
+                core     : "com.squareup.retrofit2:retrofit:${Versions.retrofit}",
+                converter: "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}",
+                rxjava   : "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}",
+        ],
+
+        moshi   : [
+                core   : "com.squareup.moshi:moshi-kotlin:1.11.0",
+                codegen: "com.squareup.moshi:moshi-kotlin-codegen:1.11.0"
+        ],
+
+        rxjava2 : [
+                java   : "io.reactivex.rxjava2:rxjava:2.2.19",
+                android: "io.reactivex.rxjava2:rxandroid:2.1.1",
+                relay  : "com.jakewharton.rxrelay2:rxrelay:2.1.1",
+                binding: "com.jakewharton.rxbinding2:rxbinding:2.2.0",
+        ],
+
+        huawei  : [
+                segmentation: "com.huawei.hms:ml-computer-vision-segmentation:${Versions.huawei}",
+                bodyModel   : "com.huawei.hms:ml-computer-vision-image-segmentation-body-model:${Versions.huawei}",
+                multiclass  : "com.huawei.hms:ml-computer-vision-image-segmentation-multiclass-model:${Versions.huawei}",
+        ],
+
+        tools   : [
+                timber      : "com.jakewharton.timber:timber:4.7.1",
+                prettyLogger: "com.orhanobut:logger:2.2.0",
+                desugarJdk  : "com.android.tools:desugar_jdk_libs:1.0.10"
+        ],
+
+        dexter  : "com.karumi:dexter:6.2.1",
+
+        lottie  : "com.airbnb.android:lottie:3.7.0",
+
+        yandex  : [
+                appmetrica: "com.yandex.android:mobmetricalib:${Versions.yandex.appmetrica}"
+        ],
+
+        adjust  : "com.adjust.sdk:adjust-android:4.24.1",
+
+        facebook: [
+                core: "com.facebook.android:facebook-core:9.0.0" //analytics
+        ],
+
+        install : "com.android.installreferrer:installreferrer:2.1",
+
+        test    : [
+                junit  : 'junit:junit:4.13',
+                mockito: [
+                        inline: "org.mockito:mockito-inline:2.21.0"
+                ]
+        ],
+]
+
+ext.glversions = [
+        kotlinStd              : '1.4.32',
+
+        activity               : '1.2.3',
+        fragment               : '1.2.5',  // Don't update to 1.3.0 until fix Matisse
+
+        xmultidex              : '2.0.1',
+        xappcompat             : '1.2.0', // Don't update to 1.3.0 until fix Matisse
+        xcore                  : '1.5.0',
+        xlegacysupport         : '1.0.0',
+        xcardview              : '1.0.0',
+        xrecyclerview          : '1.2.1',
+        xconstraint            : '2.0.1', // Check images on DocEditPageFragment after update
+        xlifecycle             : '2.3.1',
+        xlifecycleExt          : '2.2.0',
+        xmaterial              : '1.3.0',
+        browser                : '1.0.0',
+        xannotation            : '1.1.0',
+        xtransition            : '1.4.1',
+        xtransitionextra       : '2.1.0',
+        xexif                  : '1.3.2',
+        lottie                 : '3.7.0',
+
+        dagger                 : '2.30.1',
+        butterKnife            : '10.2.3',
+
+        xcicerone              : '5.1.0',
+
+        rxjava2                : '2.2.20',
+        rxbinding              : '2.2.0',
+        rxandroid              : '2.1.1',
+        rxrelay                : '2.1.1',
+
+        okhttp                 : '4.9.0',
+        retrofit               : '2.9.0',
+        gson                   : '2.8.6',
+
+        joda                   : '2.10.7.2',
+        stetho                 : '1.5.0',
+        timber                 : '4.7.1',
+        crashlytics            : '17.3.0',
+
+        glide                  : '4.12.0',
+        picasso                : '2.5.2',
+
+        pdfbox                 : '1.8.10.0',
+        billing                : '2.0.3',
+        supertoasts            : '2.0',
+
+        gmsads                 : '19.7.0',
+        firebase               : '26.4.0',
+
+        googleBase             : '17.6.0',
+        gmsauth                : '19.0.0',
+        gmsdrive               : '17.0.0',
+        gmsanalytics           : '17.0.0',
+        playcore               : '1.10.0',
+        playcoreExt            : '1.8.1',
+
+        yandex                 : '3.18.0',
+        yandexPush             : '1.10.0',
+
+        facebookSdk            : '9.0.0',
+        facebookAudienceNetwork: '6.2.0',
+]

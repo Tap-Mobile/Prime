@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.prime.features.main.PrimeMainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/prime_main_frag">
+
+        <action
+            android:id="@+id/openMenu"
+            app:destination="@id/menuFragment"
+            app:enterAnim="@anim/slide_in_from_bottom"
+            app:popExitAnim="@anim/slide_out_to_bottom" />
+        <action
+            android:id="@+id/openServers"
+            app:destination="@id/countriesFragment"
+            app:enterAnim="@anim/slide_in_from_bottom"
+            app:popExitAnim="@anim/slide_out_to_bottom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/countriesFragment"
+        android:name="com.prime.features.servers.countries.PrimeCountriesFragment"
+        tools:layout="@layout/prime_servers_frag">
+        <action
+            android:id="@+id/openCities"
+            app:destination="@id/citiesFragment"
+        />
+    </fragment>
+
+    <fragment
+        android:id="@+id/citiesFragment"
+        android:name="com.prime.features.servers.cities.PrimeCitiesFragment"
+        tools:layout="@layout/prime_servers_frag">
+        <argument
+            android:name="flag"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.prime.features.settings.menu.PrimeMenuFragment"
+        tools:layout="@layout/prime_menu_frag">
+
+        <action
+            android:id="@+id/openSupportInfo"
+            app:destination="@id/supportInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/supportInfoFragment"
+        android:name="com.prime.features.settings.support.info.PrimeSupportInfoFragment"
+        tools:layout="@layout/prime_support_info_frag">
+
+        <action
+            android:id="@+id/openSupportMessage"
+            app:destination="@id/supportMessageFragment"
+            app:enterAnim="@anim/slide_in_from_bottom"
+            app:popExitAnim="@anim/slide_out_to_bottom"
+            app:popUpTo="@id/menuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/supportMessageFragment"
+        android:name="com.prime.features.settings.support.message.PrimeSupportMessageFragment"
+        tools:layout="@layout/prime_support_message_frag">
+
+        <argument
+            android:name="reason"
+            app:argType="com.prime.features.settings.support.model.SupportReason" />
+    </fragment>
+
+</navigation>

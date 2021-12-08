@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primeAppBackground">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/prime_menu_bg_logo"
+        android:padding="9dp"
+        android:src="@drawable/prime_menu_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintWidth_max="144dp"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <TextView
+        android:id="@+id/btn_go_premium"
+        style="@style/PrimeSettingsButtonColored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/prime_menuGoPremium"
+        app:layout_constraintBottom_toTopOf="@id/btn_contact_support"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/btn_contact_support"
+        style="@style/PrimeSettingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/prime_menuContactSupport"
+        app:layout_constraintBottom_toTopOf="@id/btn_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_go_premium"
+        app:layout_goneMarginTop="0dp" />
+
+    <TextView
+        android:id="@+id/btn_share"
+        style="@style/PrimeSettingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/prime_menuShare"
+        app:layout_constraintBottom_toTopOf="@id/btn_rate_us"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_contact_support" />
+
+    <TextView
+        android:id="@+id/btn_rate_us"
+        style="@style/PrimeSettingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/prime_menuRateUs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_share" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

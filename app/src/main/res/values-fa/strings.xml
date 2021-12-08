@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_activity_home">@string/app_name</string>
+  <string name="yes">بله</string>
+  <string name="no">خیر</string>
+  <string name="ok">تأیید</string>
+  <string name="loaderConnectingTo">در حال اتصال به %1$s</string>
+  <string name="loaderNotConnected">متصل نیست (ناامن)</string>
+  <string name="loaderConnectedTo">متصل به %1$s</string>
+  <string name="loaderReconnecting">در حال اتصال مجدد</string>
+  <string name="loaderReconnectNoNetwork">در انتظار شبکهٔ قابل استفاده</string>
+  <string name="loaderCheckingAvailability">در حال بررسی دسترسی به سرور</string>
+  <string name="loaderCancel">لغو اتصال</string>
+  <string name="clickBackAgainLogout">برای کمینه کردن، دوباره کلیک کنید</string>
+  <string name="quickConnect">اتصال سریع</string>
+  <string name="cancel">انصراف</string>
+  <string name="close">بستن</string>
+  <string name="restrictedMaintenanceTitle">تحت عملیات نگهداری</string>
+  <string name="restrictedMaintenanceDescription">سروری که می‌خواهید به آن متصل شوید، در دست تعمیر است لطفاً سرور دیگری را انتخاب کنید.</string>
+  <string name="insufficientPermissionsTitle">اقدام کاربر لازم است</string>
+  <string name="insufficientPermissionsDetails">اتصال VPN نتوانست بطور خودکار برقرار شود. لطفاً یکبار به صورت دستی اقدام به اتصال نمایید تا اجازه اعطا شود.</string>
+  <string name="onMaintenanceDetected">سرور VPN که شما به آن متّصل بودید در حال تعمیر میباشد. ما بطور خودکار شما را به سریعترین سرور در دسترس دوباره وصل کردیم.</string>
+  <string name="disconnect">قطع ارتباط</string>
+  <string name="state_connecting">در حال اتصال به…</string>
+  <string name="state_connected">متصل</string>
+  <string name="state_disconnecting">در حال قطع اتصال از…</string>
+  <string name="state_error">خطا</string>
+  <string name="error_prepare_vpn_description">لطفاً حالت همیشه روشن VPN را برای تمام برنامه‌های VPN دیگر در تنظیمات VPN سیستم اندروید غیرفعّال کنید، زیرا مانع برقراری اتصال Prime VPN می‌شود. لطفاً همچنین مجوز VPN را در صورت ظاهر شدن صفحهٔ درخواست اجازهٔ VPN اعطا نمایید. ممکن است نیاز باشد برنامه‌های VPN دیگر را نیز برای جلوگیری از تداخل به کلی حذف کنید. سپس، لطفاً دوباره امتحان کنید.</string>
+  <string name="error_prepare_vpn_settings">به تنظیمات VPN اندروید بروید</string>
+  <string name="error_prepare_vpn_title">خطا: مشکل مجوز VPN</string>
+  <string name="error_server_not_set">سرور دیگر در دسترس نیست</string>
+  <string name="profileFastest">سریع‌ترین</string>
+  <string name="profileRandom">تصادفی</string>
+  <string name="serverLabelUnderMaintenance">%1$s تحت عملیات نگهداری</string>
+  <string name="serverLabelUpgrade">%1$s (ارتقا)</string>
+  <string name="loaderErrorNoInternet">اتصال اینترنت برقرار نیست</string>
+  <string name="loaderErrorGeneric">مشکلی پیش آمد</string>
+  <string name="tileConnected">متصل: %1$s</string>
+  <string name="openUrlError">%1$s باز نمی‌شود. مرورگر وب روی دستگاه شما شناسایی نشد.</string>
+  <string name="loaderErrorTimeout">زمان اتصال گذشت. لطفاً دوباره سعی کنید.</string>
+</resources>

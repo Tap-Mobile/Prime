@@ -1,0 +1,35 @@
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Kotlin
+    implementation Libs.kotlin.stdLib
+
+    //Jetpack Essentials
+    implementation Libs.jetpack.core
+    implementation Libs.jetpack.appcompat
+    implementation Libs.jetpack.fragment
+    implementation Libs.jetpack.recyclerview
+    implementation Libs.jetpack.constraint
+
+    //Lifecycle
+    implementation Libs.jetpack.lifecycle.ext
+    implementation Libs.jetpack.lifecycle.viewModelKtx
+    implementation Libs.jetpack.lifecycle.liveDataKtx
+    implementation Libs.jetpack.lifecycle.runtime
+    implementation Libs.jetpack.lifecycle.commonJava8
+
+    //RxAndroid
+    implementation Libs.rxjava2.java
+    implementation Libs.rxjava2.android
+    implementation Libs.rxjava2.binding
+
+    //Network
+    implementation Libs.okhttp.core
+
+    //Tools
+    coreLibraryDesugaring Libs.tools.desugarJdk
+    implementation Libs.tools.timber
+
+    //UI
+    implementation Libs.google.material
+}

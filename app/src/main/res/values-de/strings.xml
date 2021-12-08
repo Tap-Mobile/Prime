@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_home">@string/app_name</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="ok">Okay</string>
+
+    <string name="loaderConnectingTo">Mit %1$s verbinden</string>
+    <string name="loaderNotConnected">Nicht verbunden (ungeschützt)</string>
+    <string name="loaderConnectedTo">Verbunden mit %1$s</string>
+    <string name="loaderReconnecting">Verbindung wiederherstellen</string>
+    <string name="loaderReconnectNoNetwork">Warte auf nutzbares Netzwerk</string>
+    <string name="loaderCheckingAvailability">Überprüfe Serververfügbarkeit</string>
+    <string name="loaderCancel">Verbindung trennen</string>
+    <string name="clickBackAgainLogout">Erneut zurück klicken zum Minimieren</string>
+    <string name="quickConnect">Schnellverbindung</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="close">Schließen</string>
+    <string name="restrictedMaintenanceTitle">in Wartungsarbeiten</string>
+    <string name="restrictedMaintenanceDescription">Der Server, mit dem Sie sich versuchen zu verbinden, ist zurzeit in Wartungsarbeiten. Bitte versuchen Sie es mit einem anderen Server.</string>
+    <string name="onMaintenanceDetected">Der VPN-Server, mit dem Sie verbunden waren, wird derzeit gewartet. Wir haben Sie automatisch wieder mit dem schnellsten verfügbaren Server verbunden.</string>
+
+    <string name="insufficientPermissionsTitle">Benutzereingabe erforderlich</string>
+    <string name="insufficientPermissionsDetails">Das automatische Aufbauen einer VPN-Verbindung fehlgeschlagen. Bitte verbinden Sie sich einmal manuell, um die Berechtigungen erteilen zu können.</string>
+    <string name="disconnect">Trennen</string>
+    <string name="state_connecting">Verbindung wird hergestellt &amp;#8230</string>
+    <string name="state_connected">Verbunden</string>
+    <string name="state_disconnecting">Verbindung wird getrennt …</string>
+    <string name="state_error">Fehler</string>
+
+    <string name="error_prepare_vpn_description">Bitte deaktivieren Sie Always-on-VPN für alle anderen VPN-Anwendungen in den Android-VPN-Systemeinstellungen, da dies Prime VPN daran hindert, eine VPN-Verbindung aufzubauen. Bitte gewähren Sie auch VPN Berechtigungen, wenn ein Dialog zur Anforderung von VPN-Berechtigungen angezeigt wird. Andere VPN-Anwendungen müssen möglicherweise ebenfalls deinstalliert werden, um Konflikte zu vermeiden. Versuchen Sie es danach bitte erneut.</string>
+    <string name="error_prepare_vpn_settings">Android VPN-Einstellungen aufrufen</string>
+    <string name="error_prepare_vpn_title">Fehler: VPN-Berechtigungsproblem</string>
+    <string name="error_server_not_set">Server nicht mehr verfügbar</string>
+    <string name="profileFastest">Schnellster</string>
+    <string name="profileRandom">Zufällig</string>
+    <string name="serverLabelUnderMaintenance">%1$s im Wartungsmodus</string>
+    <string name="serverLabelUpgrade">%1$s (Upgrade)</string>
+    <string name="loaderErrorNoInternet">Keine Internetverbindung</string>
+    <string name="loaderErrorGeneric">Ein Problem ist aufgetreten</string>
+
+    <string name="tileConnected">Verbunden: %1$s</string>
+    <string name="openUrlError">%1$s konnte nicht geöffnet werden. Kein Webbrowser wurde auf Ihrem Gerät erkannt.</string>
+    <string name="loaderErrorTimeout">Zeitüberschreitung der Verbindung. Bitte versuchen Sie es erneut.</string>
+</resources>
